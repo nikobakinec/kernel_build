@@ -31,7 +31,7 @@ jobs:
 
       - name: Build kernel
         run: |
-          export KBUILD_BUILD_USER="lucid"
+          export KBUILD_BUILD_USER="nikobakinec"
           export KBUILD_BUILD_HOST="workspace"
           export PATH=$GITHUB_WORKSPACE/clang/bin:${PATH}
           args="                  ARCH=arm64 \
@@ -63,5 +63,5 @@ jobs:
       - name: Upload kernel to artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Arcadium-KSU_Begonia
+          name: BaKu_KerNeL-Begonia
           path: AnyKernel3/*
